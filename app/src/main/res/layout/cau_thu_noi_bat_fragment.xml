@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#edecec"
+    android:orientation="vertical">
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper_Home"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:layout_margin="5dp"
+            android:id="@+id/lvDanhsachCTNB"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="50dp"
+            android:layout_gravity="end|bottom"
+            android:layout_marginRight="10dp"
+            android:id="@+id/fab_danhSach"
+            android:src="@drawable/ic_add_black_24dp"
+            android:layout_marginBottom="10dp"
+            app:backgroundTint="#5a3186"
+            android:layout_height="50dp" />
+    </FrameLayout>
+
+</LinearLayout>

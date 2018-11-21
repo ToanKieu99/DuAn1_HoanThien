@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="50dp"
+        android:id="@+id/fab_doi_hinh_phu"
+        android:src="@drawable/ic_add_black_24dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginRight="10dp"
+        app:backgroundTint="#5a3186"
+        android:layout_marginBottom="10dp"
+        android:layout_height="50dp" />
+
+</FrameLayout>

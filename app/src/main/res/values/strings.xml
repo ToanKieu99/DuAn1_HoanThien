@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">DuAn1_HoanThien</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="tieusu1">F.C. Barcelona</string>
+
+    <string name="tieusu2">Câu lạc bộ bóng đá Barcelona (tiếng Catalunya: Futbol Club Barcelona),
+        cũng thường được biết đến với tên gọi tắt Barcelona,
+        hay thân mật là Barça là câu lạc bộ bóng đá giàu thành tích ở Barcelona,
+        Catalunya, Tây Ban Nha. Barcelona được thành lập vào năm 1899 bởi một nhóm cầu thủ bóng đá Thụy Sĩ,
+        Anh và Catalan, dẫn dắt bởi Joan Gamper. Khẩu hiệu là Més que un club (Không chỉ là một câu lạc bộ).
+        Sân nhà của Barcelona là sân Nou Estadi del Futbol Club Barcelona (Sân mới của Câu lạc bộ bóng đá Barcelona),
+        thường được gọi là Nou Camp.</string>
+
+    <string name="tieusu3">Barcelona đã có 25 danh hiệu vô địch quốc gia (La Liga),
+        30 Cúp quốc gia, 13 Siêu cúp quốc gia và 2 Cúp Liên đoàn Tây Ban Nha. Ở đấu trường quốc tế,
+        Barcelona cũng sở hữu 20 danh hiệu với 5 chức vô địch Cúp C1 châu Âu/UEFA Champions League,
+        4 Cúp C2, 3 Cúp C3, 5 Siêu cúp châu Âu cùng 3 Cúp thế giới các câu lạc bộ.</string>
+
+    <string name="tieusu4">Barcelona là một trong những câu lạc bộ giàu thành tích nhất
+        Tây Ban Nha cùng với Real Madrid C.F., Athletic Bilbao và Atlético Madrid.[2] Ở mùa giải 2008-2009,
+        dưới sự dẫn dắt của Huấn luyện viện Pep Guardiola,
+        Barça trở thành đội bóng đầu tiên trên thế giới giành được cú ăn 6
+        (đoạt cả sáu danh hiệu chính ở cả sáu giải đấu tham gia) trong cùng một mùa giải
+        (Cúp C1 châu Âu/UEFA Champions League, La Liga, Cúp Nhà vua Tây Ban Nha,
+        Siêu cúp bóng đá Tây Ban Nha, Siêu cúp bóng đá châu Âu và Cúp thế giới các câu lạc bộ).</string>
+
+    <string name="tieusu5">Đối thủ chính của Barcelona là Real Madrid.
+        Trận đối đầu giữa hai đội được gọi là El Clásico (El Clàssic trong tiếng Catalan).
+        Từ khi Giải vô địch bóng đá Tây Ban Nha được thành lập vào năm 1929,
+        Barcelona cùng Real Madrid và Athletic Bilbao là ba câu lạc bộ chưa bao giờ bị xuống chơi ở giải hạng nhì.
+        Theo cuộc thăm dò thực hiện vào năm 2010 của trung tâm nghiên cứu xã hội học Tây Ban Nha Centro
+        de Investigaciones Sociológicas[3] thì FC Barcelona là câu lạc bộ có nhiều cổ động viên thứ 2 ở Tây Ban Nha với 25%,
+        xếp sau Real Madrid (32%) và bỏ xa đội thứ ba là Valencia (5%).</string>
+
+    <string name="tieusu6">Thành lập và những năm đầu</string>
+
+    <string name="tieusu7">Bộ môn bóng đá chậm chinh phục được người Tây Ban Nha nói chung, và người Catalunya nói riêng.
+        Vào cuối thế kỷ XIX, Barcelona đang chuyển mình nhanh chóng trong công cuộc công nghiệp hóa và thu hút nhiều người nước ngoài đến sống và làm việc,
+        trong đó Hans Gamper, một kế toán mang quốc tịch Thụy Sĩ và chơi bóng đá nghiệp dư.
+        Gamper đầu tiên muốn gia nhập đội Gimnasio Tolosa, nhưng bị từ chối do câu lạc bộ nói trên không chấp nhận người nước ngoài,
+        ông quyết định tự thành lập một câu lạc bộ bóng đá. Vào ngày 22 tháng 10 năm 1899,
+        Joan Gamper đăng một mẩu tin quảng cáo trên tờ Los Deportes chiêu gọi mọi người thành lập một câu lạc bộ bóng đá. Và ngày 29 tháng 11 năm 1899,
+        sau khi nhận được nhiều lời phản hồi đồng ý nhận lời tham gia, mọi người quyết định gặp mặt nhau tại trụ sở của Gimnasio Solé.
+        Mười một cầu thủ có mặt gồm: Walter Wild, Bartomeu Terradas, Otto Kunzle, Otto Maier, Enric Ducal, Pere Cabot, Josep Llobet,
+        John Parsons, và William Parsons mang các quốc tịch Anh, Thụy Sĩ và Đức. Mọi người đi đến quyết định thành lập CLB Foot-Ball Club Barcelona.
+        Walter Wild, người lớn tuổi nhất đội, được chọn làm chủ tịch đầu tiên.</string>
+    <string name="tieusu8">Trận đấu đầu tiên của đội diễn ra trên sân Bonanova,
+        và Barça thua một đội tập hợp các cầu thủ quốc tịch Anh đang sống tại Barcelona[8] với tỉ số 1-0.
+        Đội đầu tiên thường đá trong khuôn viên khách sạn Casanovas trong năm 1900, sau đó rời đến sân tại ngõ Horta vào năm 1901,
+        rồi chuyển đến phố Muntaner từ năm 1905.
+        Walter Wild là vị chủ tịch đầu tiên nhưng người có công lớn nhất trong việc thành lập CLB là Hans Maximilan Gamper
+        (hay còn được biết đến với cái tên Joan Gamper) – một chàng trai trẻ người Thụy Sĩ sinh sống ở xứ Catalan
+        (sau này Joan Gamper đã năm lần làm Chủ tịch CLB). Với Gamper làm đội trưởng và thủ quỹ, Walter Wild làm chủ tịch đầu tiên,
+        Barcelona mở đầu lịch sử của mình bằng trận thua 0-1 trước đội bóng của những người Anh đang sống tại Barcelona vào ngày 8 tháng 12 năm 1899.
+        Và trận đấu đầu tiên ngoài địa giới Catalan là với FC Madrid (Real Madrid sau này),
+        lúc đó cũng mới thành lập vào tháng 5 năm 1902 và trận đấu đó Barca thắng 3-1 mở đầu cho những cuộc đối đầu giữa
+        2 CLB kình địch trong suốt chiều dài lịch sử.
+        Joan Gamper cũng chính là vị chủ tịch vĩ đại nhất trong lịch sử CLB.</string>
+</resources>

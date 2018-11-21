@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/danhCTNB"
+            android:icon="@drawable/ic_accessibility_black_24dp"
+            android:title="Danh sách Cầu thủ nổi bật" />
+        <item
+            android:id="@+id/danhSBQL"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="Danh sách ban quản lý" />
+
+        <item
+            android:id="@+id/danhsachCT"
+            android:icon="@drawable/ic_assignment_ind_black_24dp"
+            android:title="Danh sách cầu thủ" />
+        <item
+            android:id="@+id/doihinh"
+            android:icon="@drawable/ic_date_range_black_24dp"
+            android:title="Đội hình" />
+    </group>
+    <item android:title="Communicate">
+
+        <menu>
+
+            <item
+                android:id="@+id/gioiThieu"
+                android:icon="@drawable/ic_description_black_24dp"
+                android:title="Giới thiệu" />
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="Share" />
+            <item
+                android:id="@+id/dangxuat"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="Đăng xuất" />
+
+        </menu>
+
+    </item>
+
+
+</menu>
