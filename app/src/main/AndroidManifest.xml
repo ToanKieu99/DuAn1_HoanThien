@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.toanvu.duan1_hoanthien">
+    package="com.toankieu.toanvu.duan1_hoanthien">
 
     <application
 
@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.ManHinhCho"
+        <activity android:name="com.toankieu.toanvu.duan1_hoanthien.activity.ManHinhChoActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,16 +18,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.LoginAcivity" />
-        <activity android:name=".activity.MainActivity" />
-        <activity android:name=".add.ThemCauThuNoiBat" />
-        <activity android:name=".add.ThemBanQuanLy" />
-        <activity android:name=".add.ThemCauThu" />
-        <activity android:name=".add.ThemDoiHinhPhu" />
-        <activity android:name=".add.ThemDoiHinhChinh" />
-        <activity android:name=".details.DetailCauThuNoiBat" />
-        <activity android:name=".edit.EditCauThuNoiBat" />
-        <activity android:name=".edit.EditBanQuanLy"></activity>
+        <activity android:name="com.toankieu.toanvu.duan1_hoanthien.activity.LoginAcivity" />
+        <activity android:name="com.toankieu.toanvu.duan1_hoanthien.activity.MainActivity" />
+        <activity android:name="com.toankieu.toanvu.duan1_hoanthien.add.ThemCauThuNoiBat" />
+        <activity android:name="com.toankieu.toanvu.duan1_hoanthien.add.ThemBanQuanLy" />
+        <activity android:name="com.toankieu.toanvu.duan1_hoanthien.add.ThemCauThu" />
+        <activity android:name="com.toankieu.toanvu.duan1_hoanthien.add.ThemDoiHinhPhu" />
+        <activity android:name="com.toankieu.toanvu.duan1_hoanthien.add.ThemDoiHinhChinh" />
+        <activity android:name="com.toankieu.toanvu.duan1_hoanthien.details.DetailCauThuNoiBat" />
+        <activity android:name="com.toankieu.toanvu.duan1_hoanthien.edit.EditCauThuNoiBat" />
+        <activity android:name="com.toankieu.toanvu.duan1_hoanthien.edit.EditBanQuanLy"></activity>
 
     </application>
 

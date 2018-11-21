@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/manhinhchao"
-    tools:context=".activity.ManHinhCho">
+    tools:context=".activity.ManHinhChoActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
