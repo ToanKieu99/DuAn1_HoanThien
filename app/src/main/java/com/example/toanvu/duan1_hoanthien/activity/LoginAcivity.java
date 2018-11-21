@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 
-import com.example.toanvu.duan1_hoanthien.MainActivity;
 import com.example.toanvu.duan1_hoanthien.R;
 
 public class LoginAcivity extends AppCompatActivity {

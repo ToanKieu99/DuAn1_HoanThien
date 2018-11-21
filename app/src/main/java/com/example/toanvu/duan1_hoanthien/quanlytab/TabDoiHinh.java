@@ -4,8 +4,10 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
+
 import com.example.toanvu.duan1_hoanthien.fragment.DoiHinhChinhFragment;
 import com.example.toanvu.duan1_hoanthien.fragment.DoiHinhPhuFragment;
+
 
 public class TabDoiHinh extends FragmentStatePagerAdapter {
     private DoiHinhPhuFragment doiHinhPhuFragment;
