@@ -54,7 +54,7 @@ public class BanQuanLyFragment extends Fragment {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        adapter = new AdapterBanQL(getContext(),dsql);
+        adapter = new AdapterBanQL(getContext(), dsql);
         recyclerQL.setAdapter(adapter);
 
         RecyclerView.LayoutManager manager = new LinearLayoutManager(getActivity());
@@ -69,6 +69,7 @@ public class BanQuanLyFragment extends Fragment {
             }
         });
     }
+
     public void onResume() {
         super.onResume();
         dsql.clear();

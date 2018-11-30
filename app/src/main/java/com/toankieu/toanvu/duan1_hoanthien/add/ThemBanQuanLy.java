@@ -56,26 +56,33 @@ public class ThemBanQuanLy extends AppCompatActivity {
                 danhSachBanQuanLyDaol = new DanhSachBanQuanLyDao(ThemBanQuanLy.this);
 
 
-                try{
+                try {
                     QuanLyModel ql = new QuanLyModel(editMaQL.getText().toString(),
-                        editTenQL.getText().toString(),
-                        editChuVuQL.getText().toString(),
-                        editQTQL.getText().toString(),
-                        Double.parseDouble(editLuongQL.getText().toString()),
-                        editghichuQL.getText().toString());
-                    if(validateform() > 0){
-                        if (danhSachBanQuanLyDaol.insertDanhSachBanQL(ql) > 0){
+                            editTenQL.getText().toString(),
+                            editChuVuQL.getText().toString(),
+                            editQTQL.getText().toString(),
+                            Double.parseDouble(editLuongQL.getText().toString()),
+                            editghichuQL.getText().toString());
+                    if (validateform() > 0) {
+                        if (danhSachBanQuanLyDaol.insertDanhSachBanQL(ql) > 0) {
                             Toast.makeText(ThemBanQuanLy.this, "Thêm thành công", Toast.LENGTH_SHORT).show();
-                        }else {
+                        } else {
                             Toast.makeText(ThemBanQuanLy.this, "Thêm thất bại", Toast.LENGTH_SHORT).show();
                         }
                     }
-                }catch (Exception e){
+                } catch (Exception e) {
 
                 }
             }
         });
+        btHuyQL.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
+
 
     private int validateform() {
         int check = 1;
@@ -85,7 +92,7 @@ public class ThemBanQuanLy extends AppCompatActivity {
         String qt = editQTQL.getText().toString();
         String l = editLuongQL.getText().toString();
         String gc = editghichuQL.getText().toString();
-        if (ma.isEmpty() || ten.isEmpty() || cv.isEmpty() || qt.isEmpty() || l.isEmpty() || gc.isEmpty()){
+        if (ma.isEmpty() || ten.isEmpty() || cv.isEmpty() || qt.isEmpty() || l.isEmpty() || gc.isEmpty()) {
             Toast.makeText(this, "Bạn phải nhập đầy đủ để thêm", Toast.LENGTH_SHORT).show();
             check = -1;
         }

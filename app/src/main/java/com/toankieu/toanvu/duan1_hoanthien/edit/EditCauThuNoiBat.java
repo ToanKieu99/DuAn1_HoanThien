@@ -23,16 +23,14 @@ public class EditCauThuNoiBat extends AppCompatActivity {
     private TextInputEditText editSuaGiaCTNB;
     private Button btUpdateNb;
     private Button btHuyUpdateCTNB;
-    private String strMact,strName,strTV, strQT,strCHISO,strGia;
+    private String strMact, strName, strTV, strQT, strCHISO, strGia;
     CauThuNoiBatDao cauThuNoiBatDao;
-
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.edit_cau_thu_noi_bat);
-
 
 
         showUpdateCauThuNoiBat = (ImageView) findViewById(R.id.show_Update_cau_thu_noi_bat);
@@ -78,11 +76,16 @@ public class EditCauThuNoiBat extends AppCompatActivity {
                         editSuaChiSCTNB.getText().toString(),
                         Double.parseDouble(editSuaGiaCTNB.getText().toString())) > 0) {
                     Toast.makeText(getApplicationContext(), "Update thành công", Toast.LENGTH_SHORT).show();
-                }else {
+                } else {
                     Toast.makeText(EditCauThuNoiBat.this, "Update thất bại", Toast.LENGTH_SHORT).show();
                 }
             }
         });
-
+        btHuyUpdateCTNB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 }

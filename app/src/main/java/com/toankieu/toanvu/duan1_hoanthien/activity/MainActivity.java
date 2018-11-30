@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private DrawerLayout drawerLayout;
     private Toolbar toolbar;
     private NavigationView navigationView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,7 +73,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 Toast.makeText(this, "Danh sách ban quản lý ", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.danhSBQL:
-               getSupportFragmentManager().beginTransaction().replace(R.id.fragmentLayout, new BanQuanLyFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentLayout, new BanQuanLyFragment()).commit();
                 Toast.makeText(this, "Danh sách ban quản lý ", Toast.LENGTH_SHORT).show();
                 break;
 
@@ -87,7 +88,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
             case R.id.gioiThieu:
-               getSupportFragmentManager().beginTransaction().replace(R.id.fragmentLayout, new IntroFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentLayout, new IntroFragment()).commit();
                 Toast.makeText(this, "Giới thiệu", Toast.LENGTH_SHORT).show();
                 break;
 
@@ -118,6 +119,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawerLayout.closeDrawer(GravityCompat.START);
         return false;
     }
+
     public void QuanLyFragment(Fragment fragment) {
         if (fragment != null) {
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();

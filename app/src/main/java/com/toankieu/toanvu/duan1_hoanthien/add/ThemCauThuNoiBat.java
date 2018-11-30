@@ -15,9 +15,9 @@ import com.toankieu.toanvu.duan1_hoanthien.model.CauThuNoiBatModel;
 
 
 public class ThemCauThuNoiBat extends AppCompatActivity {
-    EditText editmaCT,editTenCT,editVT,editQT,editGiact,editChiso;
+    EditText editmaCT, editTenCT, editVT, editQT, editGiact, editChiso;
     ImageView show;
-    Button btThem,btHuy;
+    Button btThem, btHuy;
     CauThuNoiBatDao cauThuNoiBatDao;
 
     @Override
@@ -41,7 +41,7 @@ public class ThemCauThuNoiBat extends AppCompatActivity {
                 finish();
             }
         });
-        
+
         btThem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,17 +53,23 @@ public class ThemCauThuNoiBat extends AppCompatActivity {
                         editQT.getText().toString(),
                         editGiact.getText().toString());
                 try {
-                    if(validateform() >0){
-                        if (cauThuNoiBatDao.insertDanhSachCT(ctnb) >0){
+                    if (validateform() > 0) {
+                        if (cauThuNoiBatDao.insertDanhSachCT(ctnb) > 0) {
                             Toast.makeText(ThemCauThuNoiBat.this, "Thêm thành công", Toast.LENGTH_SHORT).show();
-                        }else {
+                        } else {
                             Toast.makeText(ThemCauThuNoiBat.this, "Thêm thất bại", Toast.LENGTH_SHORT).show();
                         }
                     }
-                    
-                }catch (Exception e){
-                    
+
+                } catch (Exception e) {
+
                 }
+            }
+        });
+        btHuy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
     }
@@ -76,7 +82,7 @@ public class ThemCauThuNoiBat extends AppCompatActivity {
         String qt = editQT.getText().toString();
         String cs = editChiso.getText().toString();
         String gia = editGiact.getText().toString();
-        if (ma.isEmpty() || ten.isEmpty() || vt.isEmpty() || qt.isEmpty() || cs.isEmpty() || gia.isEmpty()){
+        if (ma.isEmpty() || ten.isEmpty() || vt.isEmpty() || qt.isEmpty() || cs.isEmpty() || gia.isEmpty()) {
             Toast.makeText(this, "Bạn phải nhập đầy đủ để thêm", Toast.LENGTH_SHORT).show();
             check = -1;
         }

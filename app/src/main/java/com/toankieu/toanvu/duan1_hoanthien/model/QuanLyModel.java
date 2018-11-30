@@ -1,9 +1,10 @@
 package com.toankieu.toanvu.duan1_hoanthien.model;
 
 public class QuanLyModel {
-    String maQL,tenQL,chuvuQL,quoctichQL;
+    String maQL, tenQL, chuvuQL, quoctichQL;
     double luongQL;
     String ghiChu;
+
     public QuanLyModel() {
     }
 

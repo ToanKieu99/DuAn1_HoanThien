@@ -26,29 +26,29 @@ public class DanhSachBanQuanLyDao {
     }
 
     //insert
-    public  int insertDanhSachBanQL(QuanLyModel ql){
+    public int insertDanhSachBanQL(QuanLyModel ql) {
         ContentValues values = new ContentValues();
-        values.put("MaQL",ql.getMaQL());
-        values.put("TenQL",ql.getTenQL());
-        values.put("ChuVuQL",ql.getChuvuQL());
-        values.put("QuocTichQL",ql.getQuoctichQL());
-        values.put("LuongQL",ql.getLuongQL());
-        values.put("Ghichu",ql.getGhiChu());
+        values.put("MaQL", ql.getMaQL());
+        values.put("TenQL", ql.getTenQL());
+        values.put("ChuVuQL", ql.getChuvuQL());
+        values.put("QuocTichQL", ql.getQuoctichQL());
+        values.put("LuongQL", ql.getLuongQL());
+        values.put("Ghichu", ql.getGhiChu());
         try {
-            if (db.insert(TABLE_NAME,null,values) == -1){
-                return  -1;
+            if (db.insert(TABLE_NAME, null, values) == -1) {
+                return -1;
             }
-        }catch (Exception e){
-            Log.e(TAG,e.toString());
+        } catch (Exception e) {
+            Log.e(TAG, e.toString());
         }
-        return  1;
+        return 1;
     }
 
-    public List<QuanLyModel> getALLQuanLy(){
+    public List<QuanLyModel> getALLQuanLy() {
         List<QuanLyModel> dsQL = new ArrayList<>();
-        Cursor c = db.query(TABLE_NAME,null,null,null,null,null,null);
+        Cursor c = db.query(TABLE_NAME, null, null, null, null, null, null);
         c.moveToFirst();
-        while (c.isAfterLast() == false){
+        while (c.isAfterLast() == false) {
             QuanLyModel ql = new QuanLyModel();
             ql.setMaQL(c.getString(0));
             ql.setTenQL(c.getString(1));
@@ -57,7 +57,7 @@ public class DanhSachBanQuanLyDao {
             ql.setLuongQL(Double.parseDouble(c.getString(4)));
             ql.setGhiChu(c.getString(5));
             dsQL.add(ql);
-            Log.d("//====",ql.toString());
+            Log.d("//====", ql.toString());
             c.moveToNext();
         }
         c.close();
@@ -65,25 +65,26 @@ public class DanhSachBanQuanLyDao {
     }
 
 
-    public int updateInforBanQuanLy(String maQL, String tenQL, String cvql, String qtQL, String luongQL, String ghiChu){
+    public int updateInforBanQuanLy(String maQL, String tenQL, String cvql, String qtQL, String luongQL, String ghiChu) {
         ContentValues values = new ContentValues();
-        values.put("MaQL",maQL);
-        values.put("TenQL",tenQL);
-        values.put("ChuVuQL",cvql);
-        values.put("QuocTichQL",qtQL);
-        values.put("LuongQL",luongQL);
-        values.put("Ghichu",ghiChu);
-        int result = db.update(TABLE_NAME,values,"MaQL=?",new String[]{maQL});
-        if (result == 0){
+        values.put("MaQL", maQL);
+        values.put("TenQL", tenQL);
+        values.put("ChuVuQL", cvql);
+        values.put("QuocTichQL", qtQL);
+        values.put("LuongQL", luongQL);
+        values.put("Ghichu", ghiChu);
+        int result = db.update(TABLE_NAME, values, "MaQL=?", new String[]{maQL});
+        if (result == 0) {
             return -1;
         }
         return 1;
-        }
-        public int deleteBanhSachQL(String maQL){
-            int result = db.delete(TABLE_NAME,"MaQL=?",new String[]{maQL});
-            if (result == 0)
-                return -1;
-            return 1;
-        }
+    }
+
+    public int deleteBanhSachQL(String maQL) {
+        int result = db.delete(TABLE_NAME, "MaQL=?", new String[]{maQL});
+        if (result == 0)
+            return -1;
+        return 1;
+    }
 }
 

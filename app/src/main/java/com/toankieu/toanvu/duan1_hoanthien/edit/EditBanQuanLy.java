@@ -23,10 +23,9 @@ public class EditBanQuanLy extends AppCompatActivity {
     private TextInputEditText editUPDATEGhichuQL;
     private Button btUPDATEThemQL;
     private Button btUPDATEHuyQL;
-    String strMa,strName,strCV,strQT,strLuong,strGhiChu;
+    String strMa, strName, strCV, strQT, strLuong, strGhiChu;
 
     DanhSachBanQuanLyDao danhSachBanQuanLyDao;
-
 
 
     @Override
@@ -78,9 +77,16 @@ public class EditBanQuanLy extends AppCompatActivity {
                         String.valueOf(Double.parseDouble(editUPDATELuongQL.getText().toString())),
                         editUPDATEGhichuQL.getText().toString()) > 0) {
                     Toast.makeText(getApplicationContext(), "Update thành công", Toast.LENGTH_SHORT).show();
-                }else {
+                } else {
                     Toast.makeText(EditBanQuanLy.this, "Update thất bại", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        btUPDATEThemQL.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
     }

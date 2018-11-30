@@ -16,7 +16,7 @@
         android:padding="10dp">
 
         <ImageView
-            android:id="@+id/avtatarCTNB"
+            android:id="@+id/avtatarCT"
             android:layout_width="70dp"
             android:layout_height="67dp"
             android:layout_gravity="center"
@@ -42,7 +42,7 @@
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/item_mactnb"
+                    android:id="@+id/item_mact"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -64,7 +64,7 @@
                     android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/item_ten_cau_thu_noi_bat"
+                    android:id="@+id/item_ten_cau_thu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -88,7 +88,7 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/item_vt_ctnb"
+                    android:id="@+id/item_vt_ct"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -110,14 +110,14 @@
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/item_delete_ctnb"
+            android:id="@+id/item_delete_ct"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginTop="10dp"
             android:src="@drawable/icondelete" />
 
         <ImageView
-            android:id="@+id/item_edit_ctnb"
+            android:id="@+id/item_edit_ct"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginBottom="10dp"

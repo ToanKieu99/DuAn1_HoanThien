@@ -24,7 +24,7 @@ public class AdapterCauThuNoiBat extends BaseAdapter {
     public LayoutInflater inflater;
     CauThuNoiBatDao cauThuNoiBatDao;
 
-    public AdapterCauThuNoiBat(Context context,List<CauThuNoiBatModel> arrCauThuNB) {
+    public AdapterCauThuNoiBat(Context context, List<CauThuNoiBatModel> arrCauThuNB) {
         super();
         this.context = context;
         this.arrCauThuNB = arrCauThuNB;
@@ -48,7 +48,7 @@ public class AdapterCauThuNoiBat extends BaseAdapter {
     }
 
     public static class ViewHolder {
-        ImageView avatarCauThuNB,imgxoa,imgEdit;
+        ImageView avatarCauThuNB, imgxoa, imgEdit;
         TextView txtMaCTNB, txtTenCTNB, txtViTriCTNB;
 
     }
@@ -82,15 +82,15 @@ public class AdapterCauThuNoiBat extends BaseAdapter {
                     sCTNB.putString("ADTENCTNB", arrCauThuNB.get(position).getTenCTNB());
                     sCTNB.putString("ADVITRICTNB", arrCauThuNB.get(position).getVitriCTNB());
                     sCTNB.putString("ADQUOCTICHCTNB", arrCauThuNB.get(position).getQuoctichCTNB());
-                    sCTNB.putString("ADCHISOCTMNB",arrCauThuNB.get(position).getChisoCTNB());
-                    sCTNB.putString("ADGIACTNB",arrCauThuNB.get(position).getGiaCTNB());
+                    sCTNB.putString("ADCHISOCTMNB", arrCauThuNB.get(position).getChisoCTNB());
+                    sCTNB.putString("ADGIACTNB", arrCauThuNB.get(position).getGiaCTNB());
                     intent1.putExtras(sCTNB);
                     context.startActivity(intent1);
                 }
             });
 
             convertView.setTag(holder);
-        }else
+        } else
             holder = (ViewHolder) convertView.getTag();
         CauThuNoiBatModel ct = arrCauThuNB.get(position);
         holder.txtMaCTNB.setText(ct.getMactNB());

@@ -31,13 +31,13 @@ public class AdapterBanQL extends RecyclerView.Adapter<AdapterBanQL.ViewHolder> 
         this.quanLyModelList = quanLyModelList;
         danhSachBanQuanLyDao = new DanhSachBanQuanLyDao(context);
     }
-    
+
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View view = inflater.inflate(R.layout.item_ban_ql,parent,false);
+        View view = inflater.inflate(R.layout.item_ban_ql, parent, false);
         return new ViewHolder(view);
     }
 
@@ -62,7 +62,7 @@ public class AdapterBanQL extends RecyclerView.Adapter<AdapterBanQL.ViewHolder> 
                         sBQL.putString("ADCHUVUBQL", quanLyModelList.get(position).getChuvuQL());
                         sBQL.putString("ADQUOCTICHBQL", quanLyModelList.get(position).getQuoctichQL());
                         sBQL.putString("ADLUONGBQL", String.valueOf(quanLyModelList.get(position).getLuongQL()));
-                        sBQL.putString("ADGHICHUBQL",quanLyModelList.get(position).getGhiChu());
+                        sBQL.putString("ADGHICHUBQL", quanLyModelList.get(position).getGhiChu());
                         intent1.putExtras(sBQL);
                         context.startActivity(intent1);
                     }
@@ -104,6 +104,7 @@ public class AdapterBanQL extends RecyclerView.Adapter<AdapterBanQL.ViewHolder> 
             itemTcQL = itemView.findViewById(R.id.item_tc_QL);
         }
     }
+
     public void changeDataset(List<QuanLyModel> quanLyModels) {
         this.quanLyModelList = quanLyModels;
         notifyDataSetChanged();

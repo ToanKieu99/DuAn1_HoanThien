@@ -5,8 +5,10 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
+
 import java.util.ArrayList;
 import java.util.List;
+
 import com.toankieu.toanvu.duan1_hoanthien.model.CauThuNoiBatModel;
 
 public class CauThuNoiBatDao {
@@ -63,7 +65,7 @@ public class CauThuNoiBatDao {
     }
 
     ///Update
-    public int updateinfoDanhSachCT(String mct, String tenCT,String vt, String chisoCT, double giaCT) {
+    public int updateinfoDanhSachCT(String mct, String tenCT, String vt, String chisoCT, double giaCT) {
         ContentValues values = new ContentValues();
         values.put("MaCTDS", mct);
         values.put("TenCTDS", tenCT);

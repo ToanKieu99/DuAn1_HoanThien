@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import com.toankieu.toanvu.duan1_hoanthien.R;
 
 
-
 public class ManHinhChoActivity extends AppCompatActivity {
 
     @Override
@@ -22,7 +21,7 @@ public class ManHinhChoActivity extends AppCompatActivity {
                     Thread.sleep(3000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
-                }finally {
+                } finally {
                     Intent login = new Intent(ManHinhChoActivity.this, LoginAcivity.class);
                     startActivity(login);
                 }

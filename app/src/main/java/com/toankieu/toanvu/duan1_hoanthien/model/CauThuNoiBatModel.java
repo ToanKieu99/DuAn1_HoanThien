@@ -1,7 +1,7 @@
 package com.toankieu.toanvu.duan1_hoanthien.model;
 
 public class CauThuNoiBatModel {
-    String mactNB,tenCTNB,vitriCTNB,chisoCTNB,quoctichCTNB,giaCTNB;
+    String mactNB, tenCTNB, vitriCTNB, chisoCTNB, quoctichCTNB, giaCTNB;
 
     public CauThuNoiBatModel() {
     }

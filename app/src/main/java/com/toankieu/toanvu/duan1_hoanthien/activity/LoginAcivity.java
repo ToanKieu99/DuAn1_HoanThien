@@ -9,7 +9,7 @@ import android.widget.EditText;
 import com.toankieu.toanvu.duan1_hoanthien.R;
 
 public class LoginAcivity extends AppCompatActivity {
-    EditText editUser,editPass;
+    EditText editUser, editPass;
 
 
     @Override
@@ -26,8 +26,8 @@ public class LoginAcivity extends AppCompatActivity {
 
 //        if (user.equals("admin") && pass.equals("admin")){
 //            Toast.makeText(this, "Thành công", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(LoginAcivity.this, MainActivity.class);
-            startActivity(intent);
+        Intent intent = new Intent(LoginAcivity.this, MainActivity.class);
+        startActivity(intent);
 
 //        }else{
 //            Toast.makeText(this, "Login thất bại", Toast.LENGTH_SHORT).show();

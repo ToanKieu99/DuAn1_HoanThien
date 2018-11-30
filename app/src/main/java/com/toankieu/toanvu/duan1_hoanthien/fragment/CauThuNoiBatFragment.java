@@ -70,8 +70,8 @@ public class CauThuNoiBatFragment extends Fragment {
                 bundle.putString("TENCTNB", dsCTNB.get(position).getTenCTNB());
                 bundle.putString("VITRICTNB", dsCTNB.get(position).getVitriCTNB());
                 bundle.putString("QUOCTICHCTNB", dsCTNB.get(position).getQuoctichCTNB());
-                bundle.putString("CHISOCTMNB",dsCTNB.get(position).getChisoCTNB());
-                bundle.putString("GIACTNB",dsCTNB.get(position).getGiaCTNB());
+                bundle.putString("CHISOCTMNB", dsCTNB.get(position).getChisoCTNB());
+                bundle.putString("GIACTNB", dsCTNB.get(position).getGiaCTNB());
                 intent.putExtras(bundle);
                 startActivity(intent);
             }

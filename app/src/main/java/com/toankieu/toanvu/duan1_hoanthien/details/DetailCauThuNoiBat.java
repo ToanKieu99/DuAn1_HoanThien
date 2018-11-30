@@ -19,7 +19,7 @@ public class DetailCauThuNoiBat extends AppCompatActivity {
     private TextView detailQt;
     private TextView detailCstl;
     private TextView detailGia;
-    private String strName,strTV, strQT,strCHISO,strGia;
+    private String strName, strTV, strQT, strCHISO, strGia;
     CauThuNoiBatDao cauThuNoiBatDao;
 
 
@@ -56,7 +56,6 @@ public class DetailCauThuNoiBat extends AppCompatActivity {
         detailQt.setText(strQT);
         detailCstl.setText(strCHISO);
         detailGia.setText(strGia);
-
 
 
     }
