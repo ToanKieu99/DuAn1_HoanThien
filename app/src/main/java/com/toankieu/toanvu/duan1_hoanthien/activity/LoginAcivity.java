@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.toankieu.toanvu.duan1_hoanthien.R;
 
@@ -21,19 +22,17 @@ public class LoginAcivity extends AppCompatActivity {
     }
 
     public void Login(View view) {
-//        String user = editUser.getText().toString();
-//        String pass = editPass.getText().toString();
+        String user = editUser.getText().toString();
+        String pass = editPass.getText().toString();
 
-//        if (user.equals("admin") && pass.equals("admin")){
-//            Toast.makeText(this, "Thành công", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(LoginAcivity.this, MainActivity.class);
-        startActivity(intent);
+        if (user.equals("admin") && pass.equals("admin")) {
+            Toast.makeText(this, "Thành công", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(LoginAcivity.this, MainActivity.class);
+            startActivity(intent);
 
-//        }else{
-//            Toast.makeText(this, "Login thất bại", Toast.LENGTH_SHORT).show();
-//            Intent intent = new Intent(LoginAcivity.this,MainActivity.class);
-//            startActivity(intent);
-//        }
+        } else {
+            Toast.makeText(this, "Mời bạn nhập username vs password là: admin để đăng nhập", Toast.LENGTH_SHORT).show();
+        }
 
     }
 
