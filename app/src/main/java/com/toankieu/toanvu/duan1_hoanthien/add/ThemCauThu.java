@@ -3,6 +3,7 @@ package com.toankieu.toanvu.duan1_hoanthien.add;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -60,7 +61,6 @@ public class ThemCauThu extends AppCompatActivity {
                         Double.parseDouble(editGiaCT.getText().toString()),
                         editGhiChuCT.getText().toString());
                 try {
-
                     if (validateform() > 0) {
                         if (cauThuDao.insertCauThu(ct) > 0) {
                             Toast.makeText(ThemCauThu.this, "Thêm thành công", Toast.LENGTH_SHORT).show();
@@ -69,7 +69,7 @@ public class ThemCauThu extends AppCompatActivity {
                         }
                     }
                 } catch (Exception e) {
-
+                    e.printStackTrace();
                 }
             }
         });

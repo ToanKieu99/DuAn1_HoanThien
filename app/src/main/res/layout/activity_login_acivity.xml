@@ -38,6 +38,7 @@
                 app:cardCornerRadius="15dp">
 
                 <EditText
+                    android:text="admin"
                     android:id="@+id/editUsername"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -57,6 +58,7 @@
                 app:cardCornerRadius="15dp">
 
                 <EditText
+                    android:text="admin"
                     android:id="@+id/editPassword"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

@@ -41,13 +41,14 @@ public class CauThuFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         fab = view.findViewById(R.id.fab_cau_thu);
-
         lvCT = view.findViewById(R.id.lvCT);
         registerForContextMenu(lvCT);
         cauThuDao = new CauThuDao(getActivity());
         dsCT = cauThuDao.getAllCauThu();
         adapter = new CauThuAdapter(getContext(), dsCT);
         lvCT.setAdapter(adapter);
+
+
         lvCT.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
